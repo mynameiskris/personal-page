@@ -1,6 +1,18 @@
 img {
-    height: 580px;
+    height: 450px;
     width: 100%;
+}
+
+#active1{
+    height: 663px;
+}
+
+#active2{
+    height: 663px;
+}
+
+#active3{
+    height: 663px;
 }
 
 .main-body{
@@ -30,11 +42,39 @@ p{
     line-height: 1.6;
 }
 
+
+#carousel-left{
+    top: 80px;
+}
+
+#carousel-right{
+    top: 80px;
+}
+
 #facebook{
     height: 32px;
     width: 32px;
 }
 
-li{
+.nav ul li a{
+    float: left;
+    display: block;
+    padding: 10px 20px;
+    color: #686868;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav {
+    height: 80px;
+    padding-top: 25px;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: solid 2px;
+}
+
+.nav ul li{
+    margin-top: 5px;
     list-style-type: none;
 }
+

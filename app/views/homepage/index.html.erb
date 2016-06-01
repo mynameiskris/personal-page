@@ -5,15 +5,15 @@
     <li data-target ="#mycarousel" data-slide-to = "2"></li> 
   </ol>
   <div class = "carousel-inner">
-    <div class = "item active">
+    <div class = "item active" id = "active1">
       <!--<img src = "" alt ="image-1" class = "img-responsive">-->
-      <%= image_tag "IMG_3484.JPG", class: "img-responsive" %>
-      <div class = "carousel-caption">
+      <%= image_tag "IMG_3484.JPG"%>
+      <div class = "carousel-caption" , class: "img-responsive">
         <h2>My Girls</h2>
         <p> They are all my girlfriends</p>
       </div>
     </div>
-    <div class = "item">
+    <div class = "item" id = "active2">
       <!--<img src = "" alt ="image-2" class = "img-responsive">-->
       <%= image_tag "IMG_2268.JPG", class: "img-responsive" %>
       <div class = "carousel-caption">
@@ -21,7 +21,7 @@
         <p> They are all my girlfriends</p>
       </div>
     </div>
-    <div class = "item">
+    <div class = "item" id = "active3">
       <!--<img src = "" alt ="image-3" class = "img-responsive">-->
       <%= image_tag "IMG_2269.JPG", class: "img-responsive" %>
       <div class = "carousel-caption">
@@ -31,10 +31,10 @@
     </div>
   </div>
 </div>
-<a class = "carousel-control left" href = "#mycarousel" data-slide = "prev">
+<a class = "carousel-control left" id="carousel-left" href = "#mycarousel" data-slide = "prev">
   <span class = "icon-prev"></span>
 </a>
-<a class = "carousel-control right" href = "#mycarousel" data-slide = "next">
+<a class = "carousel-control right" id="carousel-right" href = "#mycarousel" data-slide = "next">
   <span class = "icon-next"></span>
 </a>
 
