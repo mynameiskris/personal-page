@@ -1,0 +1,5 @@
+#gossip-nav
+  %ul
+    - @gossips.each do |gossip|
+      %li
+        = link_to gossip.content, comment_show_path(gossip)

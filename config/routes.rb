@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root 'homepage#index'
-  get 'gossip' => 'gossip#index', :as => 'gossip_root' 
+  resources :gossip  
+  get 'comment' => 'comment#index', as: :comment_index
+  get 'comment/show/:id' => 'comment#show', as: :comment_show
+  post 'comment/create(.:format)' => 'comment#create', as: :comment_create
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,9 @@
+%p
+  = link_to "Create a new gossip", new_gossip_path
+
+- if @gossips
+  - @gossips.each do |gossip|
+    %p 
+    = gossip.content
+    = link_to "show", gossip_path(gossip)
+    = link_to "destroy", gossip_path(gossip), method: :delete, data: {confirm: "Are you sure?"}

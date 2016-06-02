@@ -1,19 +1,19 @@
 // Place all the styles related to the gossip controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.gossip-ul {
+#gossip-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.gossip-ul li{
+#gossip-nav ul li{
     display: block;
     width: 200px;
     list-style-type: none;
 }
 
-.gossip-ul li a{
+#gossip-nav ul li a{
     padding: 8px 0 8px 16px;
     text-decoration: none!important;
 }

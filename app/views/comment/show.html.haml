@@ -1,0 +1,7 @@
+= render 'gossipnav'
+
+%p
+  - @comments.each do |comment|
+    = comment.content
+
+= render 'form'
