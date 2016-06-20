@@ -1,5 +1,6 @@
-= form_for @comment, url: comment_create_path(@comment) do |f|
-  = f.label :content, "write your impression about Chris regarding this question"
-  = f.text_field :content 
-  = f.hidden_field :gossip_id, value: params[:id]
-  = f.submit
+#form-container  
+  = form_for @comment, url: comment_create_path(@comment) do |f|
+    = f.label :content, "write your impression about Chris regarding this question"
+    = f.text_field :content 
+    = f.hidden_field :gossip_id, value: params[:id]
+    = f.submit

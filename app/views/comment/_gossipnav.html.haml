@@ -1,5 +1,9 @@
-#gossip-nav
-  %ul
-    - @gossips.each do |gossip|
-      %li
-        = link_to gossip.content, comment_show_path(gossip)
+#gossip-container
+  #head-container
+    #image-container
+    #headparagraph 
+      %p
+        Please comment on these questions!
+  - @gossips.each do |gossip|
+    %div.link-container
+      = link_to gossip.content, comment_show_path(gossip)
